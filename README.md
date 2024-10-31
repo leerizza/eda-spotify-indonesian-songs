@@ -110,13 +110,13 @@ st.dataframe(top_tracks_df)
 
 ## Project Structure
 ```
-spotify-top-tracks-eda/
+eda-spotify-indonesian-songs/
 │
-├── app.py                   # Main Streamlit app script
-├── README.md                # Documentation
-├── requirements.txt         # Dependencies list
-├── .env                     # Environment variables (Spotify credentials)
-└── data/                    # (Optional) Folder to save fetched data
+├── eda-spotify-indonesian-songs.py                   # Main Streamlit app script
+├── README.md                                         # Documentation
+├── requirements.txt                                  # Dependencies list
+├── .env                                              # Environment variables (Spotify credentials)
+└── data/                                             # (Optional) Folder to save fetched data
 ```
 
 ## Acknowledgments
