@@ -3,10 +3,16 @@ import pandas as pd
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import altair as alt
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
 
 # Spotify credentials
-client_id = "7c4bd0e14e8d4d21b069c07050978f7e"
-client_secret = "c53a0cfa11004ed58ad0938a1175844e"
+client_id = os.getenv("SPOTIPY_CLIENT_ID")
+client_secret = os.getenv("SPOTIPY_CLIENT_SECRET")
 
 # Authenticate with Spotify API
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id, client_secret=client_secret))
